@@ -8,12 +8,25 @@ fullStackPHPClassName("02.08 - Estruturas de repetição");
  */
 fullStackPHPClassSession("while, do while", __LINE__);
 
+$looping = 1;
+$while = [];
+
+while($looping <= 5){
+    $while[] = $looping;
+    $looping++;
+}
+
+var_dump($while);
 
 /*
  * [ for ] https://php.net/manual/pt_BR/control-structures.for.php
  */
 fullStackPHPClassSession("for", __LINE__);
 
+
+for ($i = 1; $i < 10; $i++) {
+    echo "<p>{$i}</p>";
+}
 
 /**
  * [ break ] https://php.net/manual/pt_BR/control-structures.break.php
@@ -27,3 +40,8 @@ fullStackPHPClassSession("break, continue", __LINE__);
  * [ foreach ] https://php.net/manual/pt_BR/control-structures.foreach.php
  */
 fullStackPHPClassSession("foreach", __LINE__);
+
+
+foreach ($while as $key => $value) {
+    echo "<p>{$key}: {$value}</p>";
+}
