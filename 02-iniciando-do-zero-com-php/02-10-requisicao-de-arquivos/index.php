@@ -9,6 +9,8 @@ fullStackPHPClassName("02.10 - Requisição de arquivos");
 fullStackPHPClassSession("include, include_once", __LINE__);
 // include não é obrigatório
 //include __DIR__."header.php"; __DIR__ = caminho absoluto
+include 'file.php';
+echo "<p>Continue</p>";
 
 
 /*
@@ -17,3 +19,5 @@ fullStackPHPClassSession("include, include_once", __LINE__);
  */
 fullStackPHPClassSession("require, require_once", __LINE__);
 // require é obrigatório
+require 'file.php';
+echo "<p>Continue</p>";
