@@ -6,11 +6,30 @@ fullStackPHPClassName("02.03 - Comandos de saída");
  * [ echo ] https://php.net/manual/pt_BR/function.echo.php
  */
 fullStackPHPClassSession("echo", __LINE__);
+echo "<p>Olá Mundo!", " ", "<span class='tag'>#Boraprogramar!</span>", "</p>";
+$hello = "Olá Mundo!";
+$code = "<span class='tag'>#Boraprogramar!</span>";
+echo "<p>$hello</p>";
+echo '<p>$hello</p>';
 
+$day = "dia";
+echo "<p>Falta 1 $day para o evento!</p>";
+echo "<p>Falta 2 {$day}s para o evento!</p>";
+
+echo "<h3>{$hello}</h3>";
+echo "<h4>{$hello} {$code}</h4>";
+
+echo '<h3>'.$hello.' '.$code.'</h3>';
+?>
+<h4><?= $hello; ?> <?= $code; ?></h4>
+<?php
 /**
  * [ print ] https://php.net/manual/pt_BR/function.print.php
  */
 fullStackPHPClassSession("print", __LINE__);
+
+print $hello;
+print "<h3>{$hello} {$code}</h3>";
 
 
 /**
@@ -19,20 +38,36 @@ fullStackPHPClassSession("print", __LINE__);
 fullStackPHPClassSession("print_r", __LINE__);
 
 
+$array = [
+    "company" => "UpInside",
+    "course" => "FSPHP",
+    "class" => "Comandos de saída"
+];
 
+print_r($array);
+echo "<pre>",print_r($array, true), "</pre>";
 
 /**
  * [ printf ] https://php.net/manual/pt_BR/function.printf.php
  */
 fullStackPHPClassSession("printf", __LINE__);
 
-
+$article = "<article><h1>%s</h1><p>%s</p></article>";
+$title = "{$hello} {$code}";
+$subtitle = "lorem ispum fafdasd dsdsafssda adsfadsfa safdasd fasdfads  dafsfasdf ssdfas dsafassasdf
+asdfasd asdfads fdsfas fdsafasd fdsaf asdfasfd dsfa sasdf sdfaf asdfasdf asdfas asdfsdf asdfas sdaf";
+printf($article, $title, $subtitle );
+echo sprintf($article, $title, $subtitle);
 /**
  * [ vprintf ] https://php.net/manual/pt_BR/function.vprintf.php
  */
 fullStackPHPClassSession("vprintf", __LINE__);
 
+
+
 /**
  * [ var_dump ] https://php.net/manual/pt_BR/function.var-dump.php
  */
 fullStackPHPClassSession("var_dump", __LINE__);
+
+var_dump($array, $hello, $code);
