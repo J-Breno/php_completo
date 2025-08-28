@@ -4,3 +4,5 @@ fullStackPHPClassName('02.02 - Definindo Ambiente');
 
 
 fullStackPHPClassSession("Debug Section", __LINE__);
+
+var_dump($_SERVER);
