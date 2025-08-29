@@ -6,6 +6,17 @@ fullStackPHPClassName("03.06 - Uma classe DateTime");
  * [ DateTime ] http://php.net/manual/en/class.datetime.php
  */
 fullStackPHPClassSession("A classe DateTime", __LINE__);
+define("DATE_BR", "d/m/Y H:i:s");
+
+$dateNow = new DateTime();
+$dateBirth = new DateTime('2004-11-11');
+$dateStatic = DateTime::createFromFormat(DATE_BR, '10/03/2020');
+
+var_dump(
+    $dateNow,
+    $dateBirth,
+    $dateStatic
+);
 
 
 /*
