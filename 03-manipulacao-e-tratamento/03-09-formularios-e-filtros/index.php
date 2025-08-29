@@ -7,6 +7,14 @@ fullStackPHPClassName("03.09 - Formuários e filtros");
  * https://php.net/manual/pt_BR/book.filter.php
  */
 fullStackPHPClassSession("request", __LINE__);
+$form = new StdClass();
+$form->name = "";
+$form->email = "";
+
+var_dump($_RREQUEST);
+$form->method = "get";
+$form->method = "post";
+include  __DIR__ . "/form.php";
 
 
 /*
@@ -14,6 +22,8 @@ fullStackPHPClassSession("request", __LINE__);
  */
 fullStackPHPClassSession("post", __LINE__);
 
+$post = filter_input(INPUT_POST, "name", FILTER_DEFAULT);
+$postArray = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
 /*
  * [ get ] $_GET | INPUT_GET | filter_input | filter_var
