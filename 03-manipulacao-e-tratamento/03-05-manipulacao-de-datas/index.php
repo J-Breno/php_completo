@@ -9,7 +9,11 @@ fullStackPHPClassName("03.05 - Manipulação de datas");
  */
 fullStackPHPClassSession("a função date", __LINE__);
 
-
+var_dump([
+    date_default_timezone_get(),
+   date(DATE_W3C),
+    date("d/m/Y H:i:s"),
+]);
 
 /**
  * [ string to date ] strtotime | strftime
