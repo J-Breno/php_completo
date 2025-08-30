@@ -10,6 +10,15 @@ require __DIR__ . "/source/autoload.php";
  */
 fullStackPHPClassSession("__construct", __LINE__);
 
+// __construct = Cria uma responsabilidade maior para criar o objeto, permitindo assim a criação somente depois de inserir pelo menos os dados básicos. O método é executado automaticamente logo após a classe ser instânciada
+
+$user = new \Source\Interpretation\User(
+    "Ricardo",
+    "Barbosa",
+    "ricardo.baldrez@gmail.com"
+);
+
+var_dump($user);
 
 /*
  * [ clone ] Executado automaticamente quando um novo objeto é criado a partir do operador clone.
@@ -17,9 +26,27 @@ fullStackPHPClassSession("__construct", __LINE__);
  */
 fullStackPHPClassSession("__clone", __LINE__);
 
+$ricardo = $user;
+
+$nathalia = clone $ricardo; // Quando chamarmos a palavra reservada 'clone', chamamos a função __clone da nossa classe
+$nathalia->setFirstName("Nathália");
+$nathalia->setLastName("Oliveira");
+
+var_dump(
+    $user,
+    $nathalia
+);
 
 /*
  * [ destruct ] Executado automaticamente quando o objeto é finalizado
  * http://php.net/manual/pt_BR/language.oop5.decon.php
  */
 fullStackPHPClassSession("__destruct", __LINE__);
+
+// Executado automaticamente quando o ciclo de vida do objeto é encerrado
+$maria = clone $ricardo;
+$maria->setFirstName("Maria");
+$maria->setLastName("Aparecida");
+
+$maria = null; // Destruíndo manualmente
+// Se não após a leitura do PHP feita de cima para baixo, os objetos serão destruídos através da função __destruct automaticamente
