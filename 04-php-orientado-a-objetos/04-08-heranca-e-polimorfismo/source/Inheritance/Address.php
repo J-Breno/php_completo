@@ -36,7 +36,6 @@ class Address
      */
     public function getComplement()
     {
-        first
         return $this->complement;
     }
 }
