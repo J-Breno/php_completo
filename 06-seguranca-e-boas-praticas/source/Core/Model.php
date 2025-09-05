@@ -18,6 +18,11 @@ abstract class Model
     /** @var string|null */
     protected $message;
 
+    public function __construct()
+    {
+        $this->message = new \Source\Core\Message();
+    }
+
     /**
      * @param $name
      * @param $value
@@ -68,7 +73,7 @@ abstract class Model
     /**
      * @return null|string
      */
-    public function message(): ?string
+    public function message(): ?\Source\Core\Message
     {
         return $this->message;
     }
