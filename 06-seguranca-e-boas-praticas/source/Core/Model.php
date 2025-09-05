@@ -193,4 +193,18 @@ abstract class Model
         }
         return $filter;
     }
+
+    /**
+     * @return bool
+     */
+    protected function required(): bool
+    {
+        $data = (array)$this->data();
+        foreach (static::$required as $field) {
+            if (empty($data[$field])) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
