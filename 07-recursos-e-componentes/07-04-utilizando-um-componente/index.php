@@ -23,9 +23,9 @@ try {
      $mail = new PHPMailer(true);
 
      // CONFIG
-
     $mail->isSMTP();
     $mail->setLanguage("br");
+
     $mail->isHTML(true);
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = "tls";
@@ -36,12 +36,12 @@ try {
     $mail->Username = "MS_7BFTAN@test-51ndgwvnp8rlzqx8.mlsender.net";
     $mail->Password = "mssp.6lpdBsh.pq3enl6rw68l2vwr.AgNMmRB";
     $mail->Port = "587";
-
     // MAIL
 
     $mail->setFrom("brenojoao2222@jbrenodev.com.br", "João Breno");
     $mail->Subject = "Esse é meu envio via componente no FSPHP";
     $mail->msgHTML("<h1>Olá, Mundo!<p>Esse é meu primeiro disparo de e-mail.</p></h1>");
+
 
     // SEND
 

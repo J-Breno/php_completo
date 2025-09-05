@@ -41,3 +41,18 @@ define("CONF_MESSAGE_INFO", "info");
 define("CONF_MESSAGE_SUCCESS", "success");
 define("CONF_MESSAGE_WARNING", "warning");
 define("CONF_MESSAGE_ERROR", "error");
+
+/**
+ * MAIL
+ * */
+define("CONF_MAIL_HOST", "smtp.mailersend.net");
+define("CONF_MAIL_PORT", "587");
+define("CONF_MAIL_USER", "MS_7BFTAN@test-51ndgwvnp8rlzqx8.mlsender.net");
+define("CONF_MAIL_SENDER", ["name" => "João Breno", "address" => "brenojoao2222@jbrenodev.com.br"]);
+define("CONF_MAIL_PASS", "mssp.6lpdBsh.pq3enl6rw68l2vwr.AgNMmRB");
+
+define("CONF_MAIL_OPTIONAL_LANG", "br");
+define("CONF_MAIL_OPTIONAL_HTML", true);
+define("CONF_MAIL_OPTIONAL_AUTH", true);
+define("CONF_MAIL_OPTIONAL_SECURE", "tls");
+define("CONF_MAIL_OPTIONAL_CHARSET", "utf-8");
