@@ -131,8 +131,21 @@ function str_limit_chars(string $string, int $limit, string $pointer = "..."): s
  * @param string $path
  * @return string
  */
-function url(string $path): string
+function url(string $path = nullh): string
 {
+    if(strpos($_SERVER['HTTP_HOST'], 'localhost')){
+        if($path){
+            return CONF_URL_TEST . "/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
+        }
+        return CONF_URL_TEST;
+    }
+
+    if($path){
+        CONF_URL_BASE . "/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
+    }
+
+    return CONF_URL_BASE;
+
     return CONF_URL_BASE . "/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
 }
 

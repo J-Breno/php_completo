@@ -3,7 +3,7 @@
         'name' => 'jbreno/fsphp',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '09b3b3526646d946435c0f3c68fe54c024ad9ffe',
+        'reference' => 'b5635d9a9308b1384f1f824e31eb17774ecce278',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -37,6 +37,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'coffeecode/router' => array(
+            'pretty_version' => '1.0.8',
+            'version' => '1.0.8.0',
+            'reference' => '29f73e12351a116e9bbb3f695595777a09e18077',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../coffeecode/router',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'coffeecode/uploader' => array(
             'pretty_version' => '1.0.11',
             'version' => '1.0.11.0',
@@ -49,7 +58,7 @@
         'jbreno/fsphp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '09b3b3526646d946435c0f3c68fe54c024ad9ffe',
+            'reference' => 'b5635d9a9308b1384f1f824e31eb17774ecce278',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
