@@ -10,6 +10,13 @@
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/07-recursos-e-componentes/vendor/league/plates" />
+      <path value="$PROJECT_DIR$/07-recursos-e-componentes/vendor/composer" />
+      <path value="$PROJECT_DIR$/07-recursos-e-componentes/vendor/phpmailer/phpmailer" />
+    </include_path>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.4" />
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
