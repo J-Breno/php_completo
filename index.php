@@ -15,6 +15,9 @@ $route->namespace("Source\App");
 $route->get("/", "Web:home");
 $route->get("/sobre", "Web:about");
 $route->get("/termos", "Web:terms");
+$route->get("/blog", "Web:blog");
+$route->get("/blog/page/{page}", "Web:blog");
+$route->get("/blog/{postName}", "Web:blogPost");
 
 $route->namespace("Source\App")->group("/ops");
 $route->get("/{errcode}", "Web:error");
