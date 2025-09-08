@@ -14,6 +14,7 @@ $route = new Router(url(), ":");
 $route->namespace("Source\App");
 $route->get("/", "Web:home");
 $route->get("/sobre", "Web:about");
+$route->get("/termos", "Web:terms");
 
 $route->namespace("Source\App")->group("/ops");
 $route->get("/{errcode}", "Web:error");

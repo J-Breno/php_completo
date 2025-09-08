@@ -36,6 +36,39 @@ class Web extends Controller
     }
 
     /**
+     * @return void
+     */
+    public function about()
+    {
+        $head = $this->seo->render(
+            "Descubra o ".CONF_SITE_NAME." - ".CONF_SITE_DESC,
+            CONF_SITE_DESC,
+            url("/sobre"),
+            url("/assets/images/share.jpg")
+        );
+        echo $this->view->render("about", [
+            "head" => $head,
+            "video" => "3eluGhGwbtI"
+        ]);
+    }
+
+    /**
+     * @return void
+     */
+    public function terms(): void
+    {
+        $head = $this->seo->render(
+            CONF_SITE_NAME." - Termos de uso",
+            CONF_SITE_DESC,
+            url("/termos"),
+            url("/assets/images/share.jpg")
+        );
+        echo $this->view->render("terms", [
+            "head" => $head
+        ]);
+    }
+
+    /**
      * @param array $data
      * @return void
      */
