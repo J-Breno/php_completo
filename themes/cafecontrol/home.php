@@ -1,5 +1,7 @@
 <?php $v->layout("theme") ;?>
 
+
+
 <!--FEATURED-->
 <article class="home_featured">
     <div class="home_featured_content container content">

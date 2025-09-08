@@ -16,4 +16,5 @@ return array(
     '16c5be35e32c6cf916d875518b909210' => $vendorDir . '/league/plates/src/Util/util.php',
     'bcd2ad456a0050c22f1e6d103b5fc568' => $baseDir . '/source/Support/Config.php',
     'db53271c4355cc7b8f22247b983e7f9f' => $baseDir . '/source/Support/Helpers.php',
+    '43cf047b81a31620b462bbd577a5ceec' => $baseDir . '/source/Support/Minify.php',
 );
