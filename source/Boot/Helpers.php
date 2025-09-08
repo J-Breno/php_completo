@@ -149,6 +149,14 @@ function url(string $path = null): string
 }
 
 /**
+ * @return string
+ */
+function url_back(): string
+{
+    return ($_SERVER["HTTP_REFERER"] ?? url());
+}
+
+/**
  * @param string|null $path
  * @return string
  */
