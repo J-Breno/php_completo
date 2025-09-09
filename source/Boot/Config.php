@@ -22,6 +22,12 @@ define("CONF_SITE_TITLE", "Gerencie suas compras com o melhor café");
 define("CONF_SITE_DESC", "O CafeControl é um gerenciador de contas simples, poderoso e gratuito. O prazer de tomar um café e ter o controle total de suas contas.");
 define("CONF_SITE_LANG", "pt_BR");
 define("CONF_SITE_DOMAIN", "upinside.com.br");
+define("CONF_SITE_ADDR_STREET", "CE 406 - Rod* Antônio Luiz Moura Gonzaga");
+define("CONF_SITE_ADDR_NUMBER", "3339");
+define("CONF_SITE_ADDR_CITY", "Fortaleza");
+define("CONF_SITE_ADDR_STATE", "CE");
+define("CONF_SITE_ADDR_ZIPCODE", "88048-301");
+
 
 /**
  * SOCIAL
@@ -84,12 +90,12 @@ define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
 /**
  * MAIL
  */
-define("CONF_MAIL_HOST", "smtp.sendgrid.net");
+define("CONF_MAIL_HOST", "smtp.mailersend.net");
 define("CONF_MAIL_PORT", "587");
-define("CONF_MAIL_USER", "apikey");
-define("CONF_MAIL_PASS", "**************************");
-define("CONF_MAIL_SENDER", ["name" => "João Breno", "address" => "cursos@upinside.com.br"]);
-define("CONF_MAIL_SUPPORT", "cursos@upinside.com.br");
+define("CONF_MAIL_USER", "MS_Nt5owQ@jbrenodev.com.br");
+define("CONF_MAIL_PASS", "mssp.zUIvZko.pr9084zzqxx4w63d.ZlpvdSH");
+define("CONF_MAIL_SENDER", ["name" => "João Breno", "address" => "brenojoao2222@jbrenodev.com.br"]);
+define("CONF_MAIL_SUPPORT", "brenojoao2222@jbrenodev.com.br");
 define("CONF_MAIL_OPTION_LANG", "br");
 define("CONF_MAIL_OPTION_HTML", true);
 define("CONF_MAIL_OPTION_AUTH", true);
