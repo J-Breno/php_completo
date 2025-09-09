@@ -3,7 +3,7 @@
         'name' => 'jbreno/fsphp',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '07a83c7d76ceb8ccebb2cffcff1f2b53d2f74c48',
+        'reference' => '6bc19a5228c75f3f9e87e88f614863d608f9e739',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -58,7 +58,7 @@
         'jbreno/fsphp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '07a83c7d76ceb8ccebb2cffcff1f2b53d2f74c48',
+            'reference' => '6bc19a5228c75f3f9e87e88f614863d608f9e739',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

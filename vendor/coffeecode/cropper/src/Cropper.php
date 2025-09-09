@@ -15,31 +15,31 @@ use WebPConvert\WebPConvert;
 class Cropper
 {
     /** @var string */
-    private string $cachePath;
+    private $cachePath;
 
     /** @var string */
-    private string $imagePath;
+    private $imagePath;
 
     /** @var string */
-    private string $imageName;
+    private $imageName;
 
     /** @var string */
-    private string $imageMime;
+    private $imageMime;
 
     /** @var int */
-    private int $quality;
+    private $quality;
 
     /** @var int */
-    private int $compressor;
+    private $compressor;
 
     /**@var bool */
-    private bool $webP;
+    private $webP;
 
     /**
      * Allow jpg and png to thumb and cache generate
      * @var array allowed media types
      */
-    private static array $allowedExt = ['image/jpeg', "image/png"];
+    private static $allowedExt = ['image/jpeg', "image/png"];
 
     /**
      * Cropper constructor.
@@ -284,7 +284,7 @@ class Cropper
             }
 
             return $webPConverted;
-        } catch (ConversionFailedException) {
+        } catch (ConversionFailedException $e) {
             return $image;
         }
     }
