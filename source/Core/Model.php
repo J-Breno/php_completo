@@ -2,7 +2,6 @@
 
 namespace Source\Core;
 
-use MongoDB\Driver\Query;
 use Source\Support\Message;
 
 /**
@@ -133,6 +132,17 @@ abstract class Model
 
         $this->query = "SELECT {$columns} FROM ".static::$entity;
         return $this;
+    }
+
+    /**
+     * @param int $id
+     * @param string $columns
+     * @return null|mixed|Model
+     */
+    public function findById(int $id, string $columns = "*"): ?Model
+    {
+        $find = $this->find("id = :id", "id={$id}", $columns);
+        return $find->fetch();
     }
 
     /**
